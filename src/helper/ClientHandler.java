@@ -51,10 +51,8 @@ public class ClientHandler implements Runnable{
 
             toClient.println(response);
 
-            // VERY IMPORTANT
             toClient.flush();
 
-            // Graceful termination
             clientSocket.shutdownOutput();
 
             fromClient.close();

@@ -39,3 +39,41 @@ src/
  │
  └── threadpool/
        └── ThreadPoolServer.java
+
+Components Description
+Client
+
+Simulates multiple concurrent clients sending HTTP requests to the server.
+
+ClientHandler
+
+Handles communication between the client and the server. It processes requests and sends responses.
+
+RequestParser
+
+Parses incoming HTTP requests and extracts requested resources and request details.
+
+ResponseGenerator
+
+Generates HTTP responses including status codes, headers, and HTML content.
+
+SingleThreadedWebServer
+
+Processes one client request at a time sequentially.
+
+MultithreadedServer
+
+Creates a separate thread for every client request to support concurrent processing.
+
+ThreadPoolServer
+
+Uses a fixed-size thread pool with ExecutorService for efficient and scalable request handling.
+
+Technologies Used
+Java
+Socket Programming
+Multithreading
+ExecutorService
+Maven
+IntelliJ IDEA / VS Code
+Apache JMeter

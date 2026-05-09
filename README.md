@@ -15,23 +15,28 @@ Modular project architecture
 Request parsing and response generation
 Browser-based testing support
 JMeter performance testing support
-Project Structure
+
+Project Structure 
+
 src/
- ├── helper/
- │     ├── Client.java
- │     ├── ClientHandler.java
- │     ├── RequestParser.java
- │     └── ResponseGenerator.java
- │
- ├── singlethreaded/
- │     └── SingleThreadedWebServer.java
- │
- ├── multithreaded/
- │     └── MultithreadedServer.java
- │
- └── threadpool/
-       └── ThreadPoolServer.java
+├── helper/
+│   ├── Client.java
+│   ├── ClientHandler.java
+│   ├── RequestParser.java
+│   └── ResponseGenerator.java
+│
+├── singlethreaded/
+│   └── SingleThreadedWebServer.java
+│
+├── multithreaded/
+│   └── MultithreadedServer.java
+│
+└── threadpool/
+    └── ThreadPoolServer.java
+
 Components Description
+
+
 Client
 
 Simulates multiple concurrent clients sending HTTP requests to the server.
@@ -67,55 +72,4 @@ Multithreading
 ExecutorService
 Maven
 IntelliJ IDEA
-VS Code
 Apache JMeter
-How to Run
-Compile the Project
-javac -d out src/helper/*.java src/singlethreaded/*.java src/multithreaded/*.java src/threadpool/*.java
-Run Single Threaded Server
-java -cp out singlethreaded.SingleThreadedWebServer
-Run Multithreaded Server
-java -cp out multithreaded.MultithreadedServer
-Run Thread Pool Server
-java -cp out threadpool.ThreadPoolServer
-Run Client
-java -cp out helper.Client
-Browser Testing
-
-After starting any server, open:
-
-http://localhost:8010
-
-in a web browser.
-
-Performance Testing
-
-Apache JMeter was used to compare the performance of:
-
-Single Threaded Server
-Multithreaded Server
-Thread Pool Server
-
-Metrics analyzed:
-
-Response Time
-Throughput
-Concurrent Request Handling
-Scalability
-Learning Outcomes
-Understanding HTTP protocol fundamentals
-Low-level socket communication
-Concurrent programming in Java
-Thread management and optimization
-Client-server architecture design
-Performance analysis using JMeter
-Future Enhancements
-Static HTML file serving
-Dynamic content handling
-Logging system
-HTTPS support
-File upload support
-REST API support
-Author
-
-Anirudh Singh

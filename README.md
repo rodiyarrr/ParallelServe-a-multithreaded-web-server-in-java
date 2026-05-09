@@ -77,7 +77,7 @@ Uses a fixed-size thread pool with ExecutorService for efficient and scalable re
 - IntelliJ IDEA
 - Apache JMeter
 
-#How to Run
+# How to Run
 
 ## 1)Compile the Project
 ```
@@ -112,16 +112,16 @@ in a web browser.
 
 Apache JMeter was used to compare the performance of:
 
-Single Threaded Server
-Multithreaded Server
-Thread Pool Server
+- Single Threaded Server
+- Multithreaded Server
+- Thread Pool Server
 
 ## Metrics analyzed:
 
-Response Time
-Throughput
-Concurrent Request Handling
-Scalability
+- Response Time
+- Throughput
+- Concurrent Request Handling
+- Scalability
 
 # Learning Outcomes
  - Understanding HTTP protocol fundamentals

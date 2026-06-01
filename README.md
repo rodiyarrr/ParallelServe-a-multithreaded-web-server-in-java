@@ -74,7 +74,6 @@ Uses a fixed-size thread pool with ExecutorService for efficient and scalable re
 - Multithreading
 - ExecutorService
 - Maven
-- IntelliJ IDEA
 - Apache JMeter
 
 # How to Run
